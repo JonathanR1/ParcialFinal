@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    
+    
+}
+
+[class*="col-"]{
+    width: 100%;
+    
+    float: left;
+}
+
+
+/* EMPIEZA CONFIGURACION DEL HEDER--------------------------- */
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+p{
+    display: inline-block;
+    text-align: center;
+    color:#666;
+    padding-left: 6px;
+    font-size: 1em;
+    
+}
+
+h1{
+    display: inline-block;
+    text-align: center;
+    color: black;
+    padding-left: 6px;
+    font-size: 30px;
+
+}
+
+.fondo_1{
+    background-color: #f8f8f8;  
+}
+
+/* --color paginas extras_--------------------- */
+
+.fondo_4{
+    background-color:rgb(34, 34, 34);  
+}
+
+.fondo_3{
+    background-color:rgb(87, 87, 87);  
+}
+
+
+.borde_inf{
+    border-bottom: 1px solid rgba(192, 186, 186, 0.664);;
+    
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+}
+
+.barra_3_stilo > div{
+    
+    margin: 10px;
+    padding: 5px;
+    font-size: 0.80em;
+    align-items: center;
+}
+
+.fondo_2{
+    background-color: #0053be;
+}
+
+
+
+.icono{
+    width: 25px;
+    height: 25px;
+}
+.logo{
+    height: auto ;
+    width: 100%;
+}
+div > a {
+    
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    color: #fff;
+ 
+  }
+
+  
+
+  input[type=text], select {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .conf_tam_contenedor{
+    height: 30px;
+    
+  }
+  .conf_contenedor{
+    justify-content: center;
+     
+  }
+
+
+  /* TERMINA CONFIGURACION DEL HEDER------------------------- */
+
+  /* EMPIEZA EL SLIDER--------------------------------------------- */
+
+  .slider {
+    width: 100%;
+    
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+    animation: cambio 20s infinite alternate;
+    
+}
+
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* TERMINA EL SLIDER---------------------------------- */
+
+
+
+
+/* amplizacion-------------------------------- */
+
+
+/* fin amplizacion--------------------------------- */
+
+/* textoencima----------------------- */
+
+.conte_text{
+  
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    padding-top: 12px;
+    background-color: rgb(0, 0, 0); opacity: 0.75;   
+    width: 45%;
+    height: 45px;
+    position: absolute;
+    z-index: 0;
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.texto-encima_izq{
+    padding-top: 12px;
+    background-color: rgb(0, 0, 0); opacity: 0.75;   
+    width: 45%;
+    height: 45px;
+    position: absolute;
+    z-index: 0;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.texto-encima > p{
+ color:white;
+ font-size: 0.85em;   
+}
+
+.texto-encima_izq > p{
+    color:white;
+    font-size: 0.85em;   
+   }
+
+/* fintext-------------------------------------- */
+.marco>div:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(192, 192, 192);
+    background: #fff;
+    margin:10px;
+    cursor: pointer;
+    
+    
+}
+
+
+/*para tablet-------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+    .col-t-1{ width: 8.33%;}
+    .col-t-2{ width: 16.66%;}
+    .col-t-3{ width: 25%;}
+    .col-t-4{ width: 33.33%;}
+    .col-t-5{ width: 41.66%;}
+    .col-t-6{ width: 50%;}
+    .col-t-7{ width: 58.33%;}
+    .col-t-8{ width: 66.66%}
+    .col-t-9{ width: 75%;}
+    .col-t-10{ width: 83.33%;}
+    .col-t-11{ width: 91.66%;}
+    .col-t-12{ width: 100%;}
+    .col-t-13{width: 11.11%;}
+    .col-t-14{width: 20%; }
+   
+    .centrador>p{
+        margin-left: 12%;
+    }
+
+    .centrador2>p{
+        margin-left: 27%;
+    }
+
+    .celular_on{
+        display: none;
+    }
+
+   
+
+    .slider img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .centrar {
+       padding-left: 50px;
+       
+    }
+
+    .borde_izq{
+        border-left: 1px solid gray;
+    }
+   .icono{
+       height: 50px;
+       width: 50px;;
+   }
+
+   .dd{
+    flex-direction: wrap;
+}
+
+}
+/*para escritorio---------------------------------------------------------------*/
+@media only screen and (min-width: 768px){
+    .col-1{ width: 8.33%;}
+    .col-2{ width: 16.66%;}
+    .col-3{ width: 25%;}
+    .col-4{ width: 33.33%;}
+    .col-5{ width: 41.66%;}
+    .col-6{ width: 50%;}
+    .col-7{ width: 58.33%;}
+    .col-8{ width: 66.66%}
+    .col-9{ width: 75%;}
+    .col-10{ width: 83.33%;}
+    .col-11{ width: 91.66%;}
+    .col-12{ width: 100%;}
+    .col-13{width: 11.11%;}
+    .col-14{width: 20%; }
+
+    .margen1{
+        padding-left: 15px;
+    }
+     
+    /* configuracion del zooooo,,m------------- */
+    .zoom{
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+         transition: width 2s;
+         text-align: center;
+    }
+    .zoom > div > p {
+        visibility: hidden;
+        
+    }
+    
+    .zoom > div:hover > p {
+        visibility: visible;
+    }
+    
+    .zoom  div:hover{
+    width: 800px;
+    
+    }
+
+    .zoom2{
+        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+         transition: width 2s;
+         text-align: center;
+    }
+    .zoom2 > div > p {
+        visibility: hidden;
+        
+    }
+    
+    .zoom2 > div:hover > p {
+        visibility: visible;
+    }
+    
+    .zoom2  div:hover{
+    width: 500px;
+    
+    }
+
+    /* final del zoooommm----------------------- */
+    .fondo_2>div>img{
+        height: 50px;
+        width: 50px;
+    }
+    img:hover{
+        cursor: pointer;
+    }
+    
+    
+    
+    .conf_tam_2{
+        margin: 75px;
+        
+    }
+    .conf_tam_3>div{
+       
+        margin: 15px;
+        
+    }
+
+    
+    .celular_on{
+        display: flex;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .icono{
+        width: 25px;
+        height: 25px;
+    }
+    .centrar {
+        padding-left: 0px;
+        border-left: 0;
+     }
+     
+
+     .centrar2 {
+        padding-left: 100px;
+            
+     }
+
+     .centrar2>p{
+         color: #fff;
+     }
+     .apagar{
+        display: none;
+    }
+
+    .tam2{
+        width: 100%;
+        height: 250px;
+        
+    }
+
+    .tam2>DIV>p{
+        color: burlywood;
+    }
+    .tam2>div{
+        padding: 50px;
+    }
+    .dd{
+        flex-direction: row;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .col-t-1{ width: 8.33%;}
+    .col-t-2{ width: 16.66%;}
+    .col-t-3{ width: 25%;}
+    .col-t-4{ width: 33.33%;}
+    .col-t-5{ width: 41.66%;}
+    .col-t-6{ width: 50%;}
+    .col-t-7{ width: 58.33%;}
+    .col-t-8{ width: 66.66%}
+    .col-t-9{ width: 75%;}
+    .col-t-10{ width: 83.33%;}
+    .col-t-11{ width: 91.66%;}
+    .col-t-12{ width: 100%;}
+    .col-t-13{width: 11.11%;}
+    .col-t-14{width: 20%; }
+   
+    .centrador>p{
+        margin-left: 12%;
+    }
+
+    .centrador2>p{
+        margin-left: 27%;
+    }
+
+    .celular_on{
+        display: none;
+    }
+
+   
+
+    .slider img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .centrar {
+       padding-left: 50px;
+       
+    }
+
+    .borde_izq{
+        border-left: 1px solid gray;
+    }
+   .icono{
+       height: 50px;
+       width: 50px;;
+   }
+
+   .dd{
+    flex-direction: column;
+   }
+}
