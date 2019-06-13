@@ -18,7 +18,7 @@
                                 
                                     <div class="menu2">
                                         <ul>
-                                            <li class="bordeizq"><a href="../index.html">Inicio</a></li>
+                                            <li class="bordeizq"><a href="../html/index.html">Inicio</a></li>
                                             <li><a href="../html/audio.html">Audio</a></li>
                                             <li><a href="../html/marcas.html">Marcas</a></li>
                                             <li><a href="../html/mobiles.html">Dispositivos Mobiles</a></li>
@@ -38,7 +38,7 @@
 
         <!-- CONTENEDOR BARRA DEL CENTRO-->
         <div class="contenedor fondo_1 borde_inf ">
-                <div class="col-1 celular_on"><img class="logo" src="../img/logo2.png" alt=""></div>
+                <div class="col-1 celular_on"><img class="logo2.png" src="../IMG/logo2.png" alt=""></div>
                 <div class="col-3 celular_on"><h1>TechnoCenter.com</h1></div> 
                 
                 <div class="col-4 celular_on"><form action="proveedorhome.html" method="get">
@@ -66,7 +66,7 @@
         <!-- CONTENEDOR PADRE BARRA INFERIOR -->
         <div class="contenedor barra_3_stilo borde_inf fondo_2 conf_contenedor celular_on">
                 <div>
-                        <a href="../index.html">INICIO</a> 
+                        <a href="../html/inx.html">INICIO</a> 
                 </div> 
                 <div>
                         <a href="../html/audio.html">EQUIPOS DE SONIDO</a>
